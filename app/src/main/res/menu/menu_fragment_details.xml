@@ -1,0 +1,19 @@
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:context="ca.appdev.skinnydoo92.addressbook.activities.main.MainActivity">
+	<item
+		android:id="@+id/action_edit"
+		android:icon="@drawable/ic_edit_white_24dp"
+		android:title="@string/menuitem_edit"
+		android:orderInCategory="1"
+		app:showAsAction="ifRoom"/>
+	
+	<item
+		android:id="@+id/action_delete"
+		android:icon="@drawable/ic_delete_white_24dp"
+		android:title="@string/menuitem_delete"
+		android:orderInCategory="2"
+		app:showAsAction="ifRoom"/>
+</menu>

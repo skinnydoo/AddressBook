@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:baselineAligned="false"
+	android:divider="?android:listDivider"
+	android:padding="@dimen/activity_default_margin"
+	android:showDividers="middle"
+	android:weightSum="3"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior">
+	
+	<!-- Static fragment -->
+	<fragment
+		android:id="@+id/contactsFragment"
+		android:name="ca.appdev.skinnydoo92.addressbook.fragments.contacts.ContactsFragment"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:layout_marginEnd="@dimen/divider_margin"
+		tools:layout="@layout/fragment_contacts"/>
+	
+	<!-- For dynamic fragment using the FragmentManager in Java code-->
+	<FrameLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:id="@+id/rightPaneContainer"
+		android:layout_weight="2"
+		android:layout_marginStart="@dimen/divider_margin"/>
+</LinearLayout>
